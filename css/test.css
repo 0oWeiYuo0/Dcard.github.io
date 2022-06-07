@@ -1,0 +1,525 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none !important;
+
+    color: #000;
+}
+
+.head {
+    display: none;
+}
+
+header {
+    background-color: #006aa6;
+    display: flex !important;
+}
+
+.hdrLeft {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hdrLeft .hdrimg {
+    display: none;
+}
+
+.hdrLeft > .Markimg img {
+    width: 100px;
+    height: 100%;
+}
+
+
+
+.Insearch {
+    background-color: #00588a;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 40%;
+}
+
+.Insearch:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+}
+
+.hdrLeft > button {
+    border: solid 2px #00639b;
+    background-color: #006aa6;
+    height: 30px;
+    width: 40px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.hdrLeft > button img {
+    width: 15px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.hdrLeft > .manimg {
+    display: none;
+}
+
+.hdrRight {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.hdrRight {
+    display: flex;
+    align-items: center;
+}
+
+.hdrRight > .register {
+    cursor: pointer;
+}
+
+.hdrRight > .register > a{
+    margin-right: 1em;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.Rlist {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hreftext {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    right: -20px;
+    top: 36px;
+    overflow: auto;
+    border-radius: 15px;
+}
+
+.hreftext > a {
+    color: gray;
+    font-size: 14px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.hreftext > a:hover {
+    text-decoration: none;
+    color: gray;
+    background-color: rgb(231, 230, 230);
+}
+
+.show {
+    display: block;
+}
+
+.Rlist .href {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 8px 0 8px;
+    border-color: #ffffff transparent transparent transparent;
+    border-radius: 10px;
+}
+
+.content {
+    position: relative;
+    background-color: #00324e;
+    padding: 29em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.LeftBlock {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.LeftBlock img {
+    width: 250px;
+}
+
+.LeftBlock img:hover {
+    cursor: url("Magnifier.ico"), auto;
+    /* zoom in 是放大鏡  zoom out 是放小鏡*/
+}
+
+.LBtext {
+    line-height: 40px;
+}
+
+.LBtext > .top {
+    margin-top: 1em;
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.LBtext > .text {
+    color: rgb(161, 157, 157);
+    font-size: 24px;
+
+}
+
+.LBhref {
+    margin-top: 3em;
+    color: rgb(51, 151, 207);
+}
+
+.LBhref:hover {
+    color: rgba(51, 150, 207, 0.473);
+}
+
+.RightBlock {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    border-radius: 4px;
+    width: 25%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.RightBlock > .top {
+    color: #000;
+    margin-top: 1em;
+    font-size: 28px;
+    margin-bottom: 1vh;
+}
+
+.RBbtn {
+    border: solid 1px rgb(221, 218, 218);
+    width: 80%;
+    padding: 1vh 0;
+    margin-bottom: 1em;
+    background-color: #425f9c;
+    border-radius: 4px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.RBbtn img {
+    margin-left: 1em;
+    width: 20px;
+    border-radius: 3px;
+}
+
+.RBbtn > .text {
+    color: white;
+    text-decoration: none;
+}
+
+/* 線 */
+
+.order {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    line-height: 60px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.order .line {
+    display: inline-block;
+    width: 35%;
+    border: .5px solid rgb(231, 231, 231);
+}
+.order .txt {
+    font-size: 14px;
+    margin: 0 1em;
+    color: rgb(197, 193, 193);
+    vertical-align: middle;
+}
+
+/* ///////////////////////////////////////////// */
+
+.Block2 {
+    width: 80%;
+    margin-top: 1em;
+}
+
+.Block2 > input {
+    border-radius: 4px;
+}
+
+.B2text {
+    margin-bottom: -.5em;
+}
+
+.B2input {
+    margin-top: 1em;
+    width: 99%;
+    padding: 1vh 0;
+    border: solid 1px rgb(221, 218, 218);
+}
+
+.B2input:focus {
+    outline: none;
+}
+
+.Block3 {
+    /* margin-top: 1em; */
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Block3 .B3left {
+    padding-top: 6px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Block3 .B3right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.B3checkbox {
+    margin-top: 1px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin-left: 1em;
+}
+
+.B3ltext {
+    color: #999898;
+    margin-left: 1vh;
+    font-size: 18px;
+}
+
+.rtext {
+    font-size: 14px;
+}
+
+.rtext > a {
+    color: #59b1e4;
+}
+
+.rtext > a:hover {
+    color: #59b1e4;
+}
+
+.Block4 {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Block4 > .B4btn {
+    padding: .5em 8em;
+    background-color: #dfdfdf;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+.Block4 > .B4btn:hover {
+    text-decoration: none;
+}
+
+.Block4 > .B4text{
+    margin-top: 1em;
+    color: rgb(173, 173, 173);
+    margin-bottom: 2em;
+
+}
+
+.Block4 > .B4text a {
+    color: rgb(173, 173, 173);
+    padding-bottom: 3px;
+    border-bottom: 1px solid #000;
+}
+
+.Block5 {
+    height: 100%;
+    width: 100%;
+    background-color: #dfdfdf;
+}
+
+.Block5 > .B5text {
+    color: gray;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Block5 > .B5img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.Block5 > .B5img img {
+    margin: 0 1em;
+    width: 150px;
+}
+
+footer {
+    display: none !important;
+}
+
+@media (max-width:576px) {
+
+.head {
+    display: flex;
+    padding: 2vh 0;
+}
+
+.head img {
+    margin-left: 2vh;
+    border-radius: 6px;
+    width: 50px;
+}
+
+.head .hdtext {
+    margin-left: 2vh;
+    width: 65%;
+}
+
+.head .hdtext .hdtext1 {
+    font-weight: bold;
+}
+
+.head .hdtext .hdtext2 {
+    color: gray;
+    margin-top: .1vh;
+    font-size: 14px;
+}
+
+.head a {
+    padding: 1vh 1.5vh;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #3397cf;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.hdrLeft {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hdrLeft .hdrimg {
+    display: block;
+    width: 20px;
+    height: 15px;
+    margin-left: 2vh;
+    margin-right: 1vh;
+}
+
+.hdrLeft .Markimg {
+    width: 80%;
+}
+
+.hdrLeft button {
+    border: none;
+}
+
+.hdrLeft .manimg {
+    display: block;
+    width: 50px;
+}
+
+.hdrLeft input {
+    display: none;
+}
+
+.hdrRight {
+    display: none;
+}
+
+.content {
+    padding: 19.5em 0;
+    background-color: #fff;
+}
+
+.content > .LeftBlock {
+    display: none;
+}
+
+.content > .RightBlock {
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.Block3 > .B3right {
+    display: none;
+}
+
+.Block4 {
+    margin-top: 1em;
+}
+
+.Block4 > .B4btn {
+    padding: .4em 10em;
+    background-color: #dfdfdf;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+}
+
+.Block4 > .B4text{
+    font-size: 12px;
+}
+
+.Block4 > .B4text a {
+    padding-bottom: 1px;
+}
+
+.Block5 {
+    display: none;
+}
+
+footer {
+    display: flex !important; 
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+}
